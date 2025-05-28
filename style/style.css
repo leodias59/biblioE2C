@@ -1,0 +1,70 @@
+/*réglage généraux*/
+@font-face {
+    font-family: "police pour le titre";
+    src: url(./PORKH___.TTF);
+}
+
+@font-face {
+    font-family: "police pour le paragraphe";
+    src: url(./Gleeful-Bubble-Regular.otf);
+}
+
+*{
+    /*supprimer toutes les marges par defaults pour ne pas être embeté*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /*palette de couleur*/
+    --couleur-fonce : #0b3232;
+    --couleur-midclaire : #3fb2b2;
+    --couleur-midfonce :#1e6666;
+    --couleur-claire : #cdebeb;
+}
+body{
+    
+    font-family:  "police pour le paragraphe";
+    background-color: var(--couleur-claire);
+    color: #080808;
+}
+
+/*réglage de la partie nav */
+
+#logo{
+
+    width: 100px;
+}
+/*réglage de la partie header*/
+header{
+    width:100vw;
+     background:radial-gradient(circle at center, var(--couleur-midclaire),var(--couleur-midfonce));
+    color:var(--couleur-fonce);
+     color: black;
+    height: 16vh;
+
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 10px;
+
+    
+}
+
+
+h1 {
+    font-family: "police pour le titre";
+    font-size: 3Rem;
+}
+
+/*réglage de la partie main */
+
+/*réglage de la partie aside */
+
+h3{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 2rem;
+}
