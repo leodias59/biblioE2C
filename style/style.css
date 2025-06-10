@@ -32,7 +32,8 @@ body{
 
 #logo{
 
-    width: 100px;
+    width: 100px; 
+    display: block;
 }
 /*réglage de la partie header*/
 header{
@@ -57,9 +58,6 @@ h1 {
     font-size: 3Rem;
 }
 
-/*réglage de la partie main */
-
-/*réglage de la partie aside */
 
 h3{
     font-size: 2rem;
@@ -68,3 +66,93 @@ h3{
 h2{
     font-size: 2rem;
 }
+
+#nav-bar{
+    width: 80%;
+    display: flex;
+    flex-direction:row ;
+    justify-content:end ;
+    align-items:center ;
+    padding: 5px;
+}
+
+
+.nav-bouton{
+    font-size: 1,5rem;
+    text-decoration: none;
+    display: block;
+    background-color:var(--couleur-fonce);
+    color:var(--couleur-claire);
+    padding: 5px;
+   
+    width: 20%;
+    margin: 5px;
+
+    text-align: center;
+    border-radius: 5px;
+}
+
+.nav-bouton:hover{
+    background:var(--couleur-midclaire);
+    color:var(--couleur-fonce);
+    border: solid var(--couleur-midclaire) 2px;
+}
+
+nav{
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid var(--couleur-fonce) 1px;
+}
+
+/*réglage de la partie main */
+
+/*réglage de la partie aside */
+
+#rangement{
+    width: 100vw;
+    display: start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 15px;
+}
+
+main{
+    width: 75%;
+}
+
+article{
+    box-shadow: var(--couleur-fonce) 2px 2px 5px 0;
+    padding: 10%;
+    margin-bottom: 10px;
+
+}
+
+aside{
+    width: 20%;
+}
+
+/*image et vidéo*/
+
+#video-E2C {
+    max-width: 100%;
+
+}
+
+#lecture {
+    max-width: 100%;
+
+}
+
+#prepa-num{
+    max-width: 100%;
+
+}
+
+#festnum{
+    max-width: 100%;
+
+}
+
