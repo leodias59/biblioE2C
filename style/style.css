@@ -37,6 +37,8 @@ body{
 }
 /*réglage de la partie header*/
 header{
+    position: relative;
+    top: 10vmin;
     width:100vw;
      background:radial-gradient(circle at center, var(--couleur-midclaire),var(--couleur-midfonce));
     color:var(--couleur-fonce);
@@ -65,6 +67,7 @@ h3{
 
 h2{
     font-size: 2rem;
+    margin-bottom: 8px;
 }
 
 #nav-bar{
@@ -96,14 +99,22 @@ h2{
     background:var(--couleur-midclaire);
     color:var(--couleur-fonce);
     border: solid var(--couleur-midclaire) 2px;
+    transition: background-color 500ms; color 1000ms , border 1000ms;
 }
 
 nav{
-    display: flex;  
+    position: fixed;
+    
+    display: flex; 
+    height: 8vh; 
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: solid var(--couleur-fonce) 1px;
+
+    width: 100vw;  
+    background-color: var(--couleur-claire);
+    z-index:10;
 }
 
 /*réglage de la partie main */
@@ -111,8 +122,10 @@ nav{
 /*réglage de la partie aside */
 
 #rangement{
-    width: 100vw;
-    display: start;
+    position: relative;
+    top: 10vmin;
+     width: 100vw;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
@@ -120,39 +133,104 @@ nav{
 }
 
 main{
-    width: 75%;
+    width: 70%;
 }
 
 article{
     box-shadow: var(--couleur-fonce) 2px 2px 5px 0;
     padding: 10%;
     margin-bottom: 10px;
-
+    transition: transform 1000ms;
 }
 
+article:hover{
+    transform: translate(2vh, 2vh, 0)
+}
+    
+
+
 aside{
-    width: 20%;
+    position: fixed;
+    top: 15vmin;
+    width: 25%;
+    right: 0;
+    
 }
 
 /*image et vidéo*/
 
 #video-E2C {
     max-width: 100%;
-
 }
 
 #lecture {
     max-width: 100%;
-
+    width: 50%;
+    float: right;
 }
 
 #prepa-num{
     max-width: 100%;
-
+    margin-top: 10px;
 }
 
 #festnum{
     max-width: 100%;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+#content {
+     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#texte1{
+   
+    width: 60%;
+
 
 }
 
+#iframe{
+    display: block;
+    width: 40%;
+}
+
+aside>article{
+    padding: 15px;
+    background-color: var(--couleur-fonce);
+    color: var(--couleur-claire);
+    border: solid var(--couleur-midclaire);
+    border-radius: 10px;
+}
+
+/*disign crazyyyyy */
+
+.intertext {
+    width: 100%;
+    aspect-ratio: 1904/640;
+    background-image: url("../src/bib2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y;:5vh
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.it2{
+    background-image: url(../src/bib1.png);
+}
+h4 {
+    font-size: 4rem;
+    font-family: "police titre";
+    color: var(--couleur-claire);
+    max-width: 30px;
+}
