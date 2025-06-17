@@ -247,3 +247,70 @@ h4 {
     color: var(--couleur-claire);
     margin-right: 30px;
 }
+
+/* la page htm */
+#main-game{
+   position : relative;
+    top:10vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+    padding: 25px;
+
+    font-size: 1.5rem;
+}
+
+#user-interface{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-number{
+font-size: 1rem;
+width: 15vw;
+padding: 5px;
+border-radius: 8px;
+ background-color: var(--couleur-fonce);
+ border: none;
+ 
+
+}
+
+#user-number:focus{
+    background-color: var(--couleur-fonce);
+    color: var(--couleur-claire);
+    border: none;
+}
+
+#send-button{
+    display: block;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-left: 20px;
+
+    background-color: var(--couleur-midclaire);
+    border-radius: 10px;
+
+    box-shadow: var(--couleur-fonce) 3px 3px 5px 0;
+    transition:box-shadow 200ms, background-color 200ms ;
+    border: none;
+}
+
+#send-button:hover{
+    background-color: var(--couleur-claire);
+    box-shadow: 0 0 0 0;
+}
+
+.result-line{
+    font-family: "police titre";
+    border: var(--couleur-fonce) solid 2px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    margin: 10px;
+}
