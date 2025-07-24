@@ -1,3 +1,8 @@
+<?php
+$pagetittle ="des livres et des histoires";
+$pagesubtittle = "la bibliothèque de l'e2c";
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,7 +11,6 @@
     <title>gaming Zone</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../src/logo.png">
-    <script src="../script/test.js" defer></script>
 </head>
 <body>
     <!-- Zone du menu, en haut de la page-->
@@ -21,26 +25,9 @@
 
     </nav>
     <!-- En tête stylé-->
-    <header>
-        <h1>espace detente</h1>
-        
-
-        <h3>je kiff le javascript </h3>
-    </header>
-    <!-- Zone peincipale -->
-    <div id="main-game">
-        <div id="user-interface">
-            <div>
-                <label for="user-number">entrez un nombre entre 1 et 100</label>
-                <input id ="user-number" type="number" placeholder="votre nombre ici" min="1"  max ="100">
-                
-            </div>
-            <input id ="send-button" type="submit" value="proposé">
-        </div>
-        <div id="game-display">
-
-
-        </div>
-    </div>
+    <?php
+        require_once("../view/_partials/_header.php")
+    ?>
+    <!-- Zone peincipale - présentation de l'e2c et de Silence, On lit-->
 </body>
 </html>
